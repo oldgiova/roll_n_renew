@@ -6,12 +6,12 @@ resource "aws_iam_user" "default" {
   }
 }
 
-resource "aws_iam_access_key" "key_2" { #prev
+resource "aws_iam_access_key" "key_3" { #prev
   user   = aws_iam_user.default.name
   status = "Inactive"
 }
 
-resource "aws_iam_access_key" "key_3" { #curr
+resource "aws_iam_access_key" "key_4" { #curr
   user = aws_iam_user.default.name
 }
 
